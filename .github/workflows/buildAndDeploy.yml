@@ -36,7 +36,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t usermanagement:latest .
+        run: docker build -t jumokejoseph/usermanagement:latest .
 
       - name: Push Docker image to Docker Hub
-        run: docker push usermanagement:latest
+        run: docker push jumokejoseph/usermanagement:latest
